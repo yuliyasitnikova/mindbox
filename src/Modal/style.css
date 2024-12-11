@@ -1,0 +1,77 @@
+.modal {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: background-color 300ms, -webkit-transform 300ms;
+  transition: background-color 300ms, -webkit-transform 300ms;
+  -o-transition: background-color 300ms, transform 300ms;
+  transition: background-color 300ms, transform 300ms;
+  transition: background-color 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.modal_enter {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.modal_enter-active {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.modal_enter-done {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.modal_exit {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.modal_exit-active {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.modal_exit-done {
+  top: -webkit-calc(-120vh * 1.2);
+  top: calc(-120vh * 1.2);
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.modal--content {
+  position: relative;
+  margin: 25vh 25vw;
+  padding: 20px;
+  height: 25vw;
+  background: white;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
